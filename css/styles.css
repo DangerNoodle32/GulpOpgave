@@ -25,7 +25,8 @@ ul, ol {
 
 li {
   margin: 0;
-  /* Ingen ydre margen fra listpunkter */ }
+  /* Ingen ydre margen fra listpunkter */
+  list-style-type: none; }
 
 p {
   margin: 0;
@@ -42,7 +43,37 @@ img {
   height: auto;
   /* Højden skal tilpasse sig */ }
 
-body {
-  background: #F00; }
+.Name {
+  grid-row: 1/2;
+  grid-column: 1/1;
+  text-align: center; }
+
+.container {
+  display: grid;
+  grid-template-columns: 100px 80%; }
+
+.sidebar {
+  grid-row: 2/3;
+  background: #4d4dff;
+  text-align: center;
+  padding: 20px;
+  font-size: 15px; }
+  .sidebar li {
+    padding: 5px;
+    margin-top: 20px; }
+
+.topmenu {
+  grid-column: 2/3;
+  display: flex;
+  flex-wrap: wrap;
+  background: #4d4dff; }
+  .topmenu li {
+    font-size: 15px;
+    padding: 20px; }
+
+.graphs {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background: green; }
 
 /*# sourceMappingURL=styles.css.map */

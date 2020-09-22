@@ -1,3 +1,10 @@
+$tablet: "screen and (min-width: 760px)";
+$pc: "screen and (min-width: 1080px)";
+@import "colors";
+$Padding: 20px;
+$Click: pointer;
+$FontSizeMobile: 15px;
+
 * { /* Gælder alt på hele siden */
   box-sizing: border-box; /* Bokse har altid den størrelse man giver uanset om der tilføjes margen, padding mv. */
 }
@@ -21,6 +28,7 @@ ul, ol {
 
 li {
   margin: 0; /* Ingen ydre margen fra listpunkter */
+  list-style-type: none;
 }
 
 p {
@@ -35,10 +43,46 @@ img {
   height: auto; /* Højden skal tilpasse sig */
 }
 
-$primary: #F00;
+.Name{
+  grid-row: 1/2;
+  grid-column: 1/1;
+  text-align: center;
+}
 
-body{
-  background: $primary;
+.container {
+  display: grid;
+  grid-template-columns: 100px 80%;
+}
+
+.sidebar {
+  grid-row: 2/3;
+  background: $PrimaryColor;
+  text-align: center;
+  padding: $Padding;
+  font-size: $FontSizeMobile;
+
+    li{
+      padding: 5px;
+      margin-top: 20px;
+    }
+}
+
+.topmenu {
+  grid-column: 2/3;
+  display: flex;
+  flex-wrap: wrap;
+  background: $PrimaryColor;
+
+    li{
+      font-size: $FontSizeMobile;
+      padding: $Padding;
+    }
+}
+
+.graphs {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background: green;
 }
 
 
