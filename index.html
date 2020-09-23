@@ -19,7 +19,7 @@
 
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-
+    <link href="css/styles.css" rel="stylesheet" type="text/css"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -31,39 +31,84 @@
 
     <section class="sidebar">
 
-        <li>Profile</li>
-        <li>Profile</li>
-        <li>Profile</li>
-        <li>Profile</li>
-        <li>Profile</li>
-        <li>Profile</li>
+        <li>My profile</li>
+        <li>Inbox</li>
+        <li>Service</li>
+        <li>Help</li>
+        <li>Contact</li>
+        <li>Settings</li>
 
     </section>
 
     <div class="Name">
 
-        <h2>CDB</h2>
-        <h4>Dashboard</h4>
+        <h1>CDB</h1>
+        <h2>Dashboard</h2>
 
     </div>
 
     <header class="topmenu">
 
-        <li>HOME</li>
-        <li>MY SALES</li>
+        <div class="menu">
+            <li>HOME</li>
+            <li>MY SALES</li>
+        </div>
+        <br>
+        <i class="fas fa-bars"></i>
 
     </header>
 
+    <section class="choose">
+
+        <div class="Person">
+            <p>Person</p>
+            <li>Jason</li>
+            <li>Brian</li>
+            <li>Kenneth</li>
+        </div>
+        <div class="Product">
+            <p>Brand</p>
+            <li>Nike</li>
+            <li>Puma</li>
+            <li>Vans</li>
+        </div>
+        <div class="Country">
+            <p>Country</p>
+            <li>Denmark</li>
+            <li>Norway</li>
+            <li>Sweden</li>
+        </div>
+
+    </section>
+
     <section class="graphs">
 
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div class="img">
+
+            <div>
+                <img class="best" src="images/bestseller.png" alt="#">
+                <img class="land" src="images/country.png" alt="#">
+                <img class="pers" src="images/personsales.png" alt="#">
+            </div>
+
+        </div>
 
     </section>
 
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+
+    $(document).ready(function(){
+        $(".fa-bars").click(function(){
+            $(".sidebar").slideToggle("slow");
+        });
+    });
+
+</script>
+
 
 </body>
 </html>
