@@ -144,12 +144,14 @@ img {
   .sidebar {
     grid-column: 1/2;
     grid-row: 2/4;
-    display: block; }
+    display: block;
+    right: unset;
+    position: static;
+    width: 100%; }
     .sidebar li {
       border: 1px solid black;
       cursor: pointer;
       background: #4d4dff;
-      width: 220px;
       text-align: center; }
   li:hover {
     background-color: #6666ff; }
