@@ -152,7 +152,8 @@ img {
       border: 1px solid black;
       cursor: pointer;
       background: #3333ff;
-      text-align: center; }
+      text-align: center;
+      width: 100%; }
   li:hover {
     background-color: #6666ff; }
   .topmenu {
